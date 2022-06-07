@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Voice Changer</string>
+    <string name="my_image">my_imgae</string>
+    <string name="str_baby">baby Vocie</string>
+    <string name="_00_00">00:00</string>
+    <string name="recording">Recording</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="share_app">Share app</string>
+    <string name="rate_us">Rate us</string>
+    <string name="more_app">More apps</string>
+    <string name="play_product_id">lifetime_ads_remove</string>
+    <string name="purchase">Purchase</string>
+    <string name="please_buy_the_subscription_">Please buy the subscription to enjoy all features and ad free app</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Do you want to exit?</string>
+
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_suggestions">Suggest us what went wrong and we\'ll work on it!</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="go_back">Go back</string>
+    <string name="stay_here">Listen Again</string>
+
+    <!--    //Test Ads-->
+    <string name="App_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_app_open_ads">ca-app-pub-3940256099942544/3419835294</string>
+
+    <!---->
+
+    <string name="appLivin_Banner">49b4ba3991112564</string>
+    <string name="appLivin_Interstitial">5a688ef05826090f</string>
+
+
+    <!--        //Live Ads-->
+    <!--        <string name="App_ID">ca-app-pub-9347261864898556~9930699174</string>-->
+    <!--        <string name="admob_banner_id">ca-app-pub-9347261864898556/2606936449</string>-->
+    <!--        <string name="admob_interstitial_id">ca-app-pub-9347261864898556/7967074334</string>-->
+    <!--        <string name="admob_native_id">ca-app-pub-9347261864898556/5041528093</string>-->
+    <!--        <string name="admob_app_open_ads">ca-app-pub-9347261864898556/4063023697</string>-->
+
+    <!--        <string name="unity_ads_id">4402066</string>-->
+    <!--        <string name="unity_ads_test_mode">false</string>-->
+    <!--        <string name="facebook_native">988836998275659_988849684941057</string>-->
+    <!--        <string name="facebook_Interstitial">988836998275659_988846738274685</string>-->
+
+    <!--        <string name="appLivin_Banner">49b4ba3991112564</string>-->
+    <!--        <string name="appLivin_Interstitial">5a688ef05826090f</string>-->
+
+    <string name="ads_placement">Ads Placement</string>
+    <string name="save">Save</string>
+    <string name="unable_to_saved_this_file_this_file_can_only_be_played">Unable to saved this file. This file can only be played</string>
+    <string name="splashText">Turn your boring moment into a lot of fun with cool voice changer app</string>
+    <string name="voice_effects">Voice Effects:</string>
+    <string name="enter_text_in_english_for_recording">Enter text in English for recording</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_audio_file_found">No Audio file found</string>
+    <string name="tap_on_mic_to_start_recording">Tap on mic to start recording</string>
+    <string name="reset">Reset</string>
+    <string name="discard">Discard</string>
+    <string name="you_go_back_">If you go back or cancel now, your progress will be discarded</string>
+    <string name="custom">Custom</string>
+    <string name="enter_a_name_for_this_audio">Enter a name for this audio.</string>
+    <string name="recorded_file">Sound File:</string>
+    <string name="no_record_found">No record found</string>
+    <string name="search">Search.....</string>
+    <string name="add_effects">Add Effects</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="rename">Rename</string>
+    <string name="successfully_saved">Successfully saved.</string>
+    <string name="my_recordings">My Recordings</string>
+    <string name="the_best_we_can_get">THE BEST WE CAN GET:)</string>
+    <string name="we_are_working">We are working hard for a better user experience. we\'d greatly appreciate if you can rate us.</string>
+
+    <string name="playYourSound">Play your sound</string>
+
+    <string name="do_you_want_to_delete_this_file">Do you want to delete this file?</string>
+    <string name="rename_your_audio">Rename your audio</string>
+    <string name="btn_pause">btn_pause</string>
+    <string name="kb">KB</string>
+    <string name="importAudio">Import Audios</string>
+    <string name="licenseKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiWpX88mvRz0zuciQuhS1H/TFNtDzQs9jMWqILHn0XkAGB0iIx7DO4d/l52nXkwf2HOoW/mNtniCZhiyWSyOfRTXmlgFW13mPUI6SGEs9cK5p/WsMe2S39dSCqCsZCmJrlWqE/NEfj24z7lSs6qUvWE916KWuXPlraCnabzaatIt2eykVMV7Zd0oQRmUYxm06k6kLtozS0rMLEdaofe+oh7Bf8HZXUiICyUdZJtBf2ydB0zWipYkLis1MZXVUQNv6ETy0jCY6t2d3m7wYcjonLkAa+ak49swEbmWDUGfysNLaL3ndYKAo/qBK3WVhQHOdxZxBtpHpmoFuQSdgiXwAKwIDAQAB</string>
+    <string name="textToVoice">Text to Speech</string>
+    <string name="set_as_ringtone">Set as Ringtone</string>
+    <string name="share">Share</string>
+    <string name="sound_effects">Sound Effects</string>
+    <string name="sound_file">Sound file</string>
+    <string name="remind_me_later">Remind me later</string>
+    <string name="next">Next</string>
+    <string name="record_new_effect">Record New Voice</string>
+    <string name="original_voice">Original Voice</string>
+    <string name="apply_effects_on_original_voice">Add more effects to your original voice.</string>
+    <string name="please_enter_file_name">Please Enter Audio Name</string>
+</resources>

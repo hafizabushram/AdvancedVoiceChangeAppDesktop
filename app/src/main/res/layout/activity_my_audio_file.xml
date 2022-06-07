@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBarMain"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/RL_noAudio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_below="@id/appBarMain"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_noRecording"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_recording_no_voices" />
+
+            <TextView
+                android:id="@+id/tv_noAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_noRecording"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/sf_regular"
+                android:text="@string/no_audio_file_found"
+                android:textColor="@color/grey_500"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/Rl_player"
+            android:layout_below="@id/appBarMain"
+            android:layout_margin="@dimen/_8sdp"
+            android:divider="@color/colorBgSound"
+            android:dividerHeight="5dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Rl_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bannerContainer"
+            android:background="@color/white"
+            android:visibility="gone">
+
+
+            <include
+                android:id="@+id/customPlayer"
+                layout="@layout/custom_exo_controller_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:minHeight="@dimen/_45sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/ads_placement"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/_12sdp" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</layout>

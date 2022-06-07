@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_32sdp"
+            android:background="@drawable/rounded_rectangle"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <ImageButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_cancel_dailog" />
+
+
+            <TextView
+                android:id="@+id/dialog_rating_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/we_are_working"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dialog_rating_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_medium"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="@string/the_best_we_can_get"
+                android:textColor="@color/colorPurple"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationViewRatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/ic_rate_us_stars"
+                app:lottie_repeatCount="1" />
+
+
+            <RatingBar
+                android:id="@+id/dialog_rating_rating_bar"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:numStars="5"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:stepSize="1" />
+
+
+            <ImageButton
+                android:id="@+id/rateUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_rate_us_btn" />
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/ic_rate_us_emoji"
+            app:lottie_repeatCount="@integer/google_play_services_version" />
+
+
+        <LinearLayout
+            android:id="@+id/dialog_rating_buttons"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_32sdp"
+            android:background="@drawable/rounded_rectangle"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/dialog_rating_feedback_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_22sdp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <EditText
+                android:id="@+id/dialog_rating_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="top|left"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/textColor"
+                android:textColorHint="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dialog_rating_feedback_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialog_rating_button_feedback_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_rating_button_feedback_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

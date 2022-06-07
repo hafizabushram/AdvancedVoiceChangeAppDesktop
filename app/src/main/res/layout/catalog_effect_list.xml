@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_16sdp">
+
+    <RelativeLayout
+        android:id="@+id/RL_imageBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_logo_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/original_oice" />
+
+
+        <ImageButton
+            android:id="@+id/ib_homePlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_6sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_play_home"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_frontborder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_alignBottom="@+id/RL_imageBorder"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/RL_imageBorder"
+        app:layout_constraintEnd_toEndOf="@+id/RL_imageBorder"
+        app:layout_constraintStart_toStartOf="@+id/RL_imageBorder"
+        app:layout_constraintTop_toTopOf="@+id/RL_imageBorder" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_regular"
+        android:maxLines="1"
+        android:text="@string/str_baby"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/RL_imageBorder"
+        app:layout_constraintStart_toStartOf="@+id/RL_imageBorder"
+        app:layout_constraintTop_toBottomOf="@id/RL_imageBorder" />
+
+    <ImageButton
+        android:id="@+id/btn_homeRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_record_home"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/RL_imageBorder"
+        app:layout_constraintStart_toStartOf="@+id/RL_imageBorder"
+        app:layout_constraintTop_toBottomOf="@id/RL_imageBorder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

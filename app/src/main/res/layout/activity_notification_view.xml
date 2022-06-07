@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgSound"
+    tools:context=".activity.NotificationViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:onClick="OnBack"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/iv_back_save"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitlee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:text="@string/title"
+        android:textColor="@color/colorTime"
+        app:layout_constraintTop_toBottomOf="@id/imgImage" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/edt_bg"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:textColor="@color/textColor"
+        app:layout_constraintTop_toBottomOf="@id/txtTitlee" />
+
+    <ImageView
+        android:id="@+id/imgTitleCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:src="@drawable/ic_file_copy"
+        app:layout_constraintRight_toRightOf="@id/txtTitle"
+        app:layout_constraintTop_toTopOf="@id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtDece"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:text="@string/description"
+        android:textColor="@color/colorTime"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtDec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/edt_bg"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:textColor="@color/textColor"
+        app:layout_constraintTop_toBottomOf="@id/txtDece" />
+
+    <ImageView
+        android:id="@+id/imgDecCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:src="@drawable/ic_file_copy"
+        app:layout_constraintRight_toRightOf="@id/txtDec"
+        app:layout_constraintTop_toTopOf="@id/txtDec" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imgImage"
+        app:layout_constraintLeft_toLeftOf="@id/imgImage"
+        app:layout_constraintRight_toRightOf="@id/imgImage"
+        app:layout_constraintTop_toTopOf="@id/imgImage" />
+
+    <ImageView
+        android:id="@+id/imgImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        app:layout_constraintHeight_max="@dimen/_250sdp"
+        app:layout_constraintHeight_min="@dimen/_170sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview" />
+
+
+    <ImageView
+        android:id="@+id/imgSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_download_btn"
+        app:layout_constraintLeft_toLeftOf="@id/txtDec"
+        app:layout_constraintRight_toLeftOf="@id/imgShare"
+        app:layout_constraintTop_toBottomOf="@id/txtDec" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_share_app"
+        app:layout_constraintLeft_toRightOf="@id/imgSave"
+        app:layout_constraintRight_toRightOf="@id/txtDec"
+        app:layout_constraintTop_toBottomOf="@id/txtDec" />
+
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_45sdp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ads_placement"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_12sdp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

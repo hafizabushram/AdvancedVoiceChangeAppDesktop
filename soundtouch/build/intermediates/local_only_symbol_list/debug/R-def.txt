@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher
+id buttonProcess
+id buttonSelectOutFile
+id buttonSelectSrcFile
+id checkBoxPlay
+id editTextOutFileName
+id editTextPitch
+id editTextSrcFileName
+id editTextTempo
+id linearLayout1
+id playBtn
+id scrollView1
+id tableRow1
+id tableRow2
+id textViewResult
+layout activity_example
+string app_name
+string hello_world
+style AppBaseTheme
+style AppTheme
+style textStyle
+style textStyleAudio
+style textStyleLinearLayout

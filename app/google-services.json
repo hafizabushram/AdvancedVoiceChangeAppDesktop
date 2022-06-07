@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811548780832",
+    "project_id": "voice-changer-86338",
+    "storage_bucket": "voice-changer-86338.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811548780832:android:f81ffea18405256a8a0f45",
+        "android_client_info": {
+          "package_name": "com.voice.changer.funnyeffects.voicechanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811548780832-t7lth15gqr36r566rn16uaan8d44s542.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7RHsIBy39peQ28uchyeZ12NavWOBuhUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811548780832-t7lth15gqr36r566rn16uaan8d44s542.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

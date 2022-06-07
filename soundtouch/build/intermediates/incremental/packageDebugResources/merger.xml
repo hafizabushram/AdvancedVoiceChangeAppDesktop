@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res"/><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\build\generated\res\rs\debug"/><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res"><file name="ic_launcher" path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_example" path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\layout\activity_example.xml" qualifiers="" type="layout"/><file path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">SoundTouch Example</string><string name="hello_world">Hello world!</string></file><file path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\main\res\values\styles.xml" qualifiers=""><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        
+    </style><style name="textStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginVertical">12dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style><style name="textStyleAudio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style><style name="textStyleLinearLayout">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style></file></source><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\build\generated\res\rs\debug"/><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\user\Desktop\AdvancedVoiceChangeApp\AdvancedVoiceChangeApp\soundtouch\src\debug\res"/></dataSet><mergedItems/></merger>

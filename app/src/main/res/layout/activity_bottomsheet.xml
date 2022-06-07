@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_250sdp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorPurple" />
+
+        <TextView
+            android:id="@+id/tv_recName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topView"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:fontFamily="@font/sf_medium"
+            android:text="@string/str_baby"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:id="@+id/LL_forText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_recName"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_recDate"
+                style="@style/textStyleLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_regular"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/_6sdp"
+                android:text="@string/share_app" />
+
+            <TextView
+                android:id="@+id/tv_recDuration"
+                style="@style/textStyleLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_regular"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:text="@string/share_app" />
+
+            <TextView
+                android:id="@+id/tv_recSize"
+                style="@style/textStyleLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_regular"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:text="@string/share_app" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/middleView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/LL_forText"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/grey_500" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/middleView"
+            android:layout_marginVertical="@dimen/_12sdp">
+
+            <Button
+                android:id="@+id/action_bottomRename"
+                style="@style/textStyleAudio"
+                android:drawableStart="@drawable/ic_rename"
+                android:fontFamily="@font/sf_regular"
+                android:text="@string/rename" />
+
+
+            <Button
+                android:id="@+id/action_bottomAdd"
+                style="@style/textStyleAudio"
+                android:layout_below="@id/action_bottomRename"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_add_effects"
+                android:focusable="true"
+                android:fontFamily="@font/sf_regular"
+                android:text="@string/add_effects" />
+
+            <Button
+                android:id="@+id/action_bottomShare"
+                style="@style/textStyleAudio"
+                android:layout_below="@id/action_bottomAdd"
+                android:drawableStart="@drawable/ic_share"
+                android:fontFamily="@font/sf_regular"
+                android:text="@string/share" />
+
+            <Button
+                android:id="@+id/action_bottomRingtone"
+                style="@style/textStyleAudio"
+                android:layout_below="@id/action_bottomShare"
+                android:drawableStart="@drawable/ic_set_as_ringtone"
+                android:fontFamily="@font/sf_regular"
+                android:text="@string/set_as_ringtone" />
+
+            <Button
+                android:id="@+id/action_bottomDelete"
+                style="@style/textStyleAudio"
+                android:layout_below="@id/action_bottomRingtone"
+                android:drawableStart="@drawable/ic_delete"
+                android:fontFamily="@font/sf_regular"
+                android:text="@string/delete" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+  </LinearLayout>
+
+
+</layout>

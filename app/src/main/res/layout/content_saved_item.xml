@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    android:background="@drawable/card_background"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:fontFamily="@font/sf_medium"
+            android:text="@string/str_baby"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_play_recording_unselect"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_recName"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_toEndOf="@id/imageView2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_recDate"
+                style="@style/textStyleLinearLayout"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/sf_regular"
+                android:layout_height="wrap_content"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:text="@string/share_app" />
+
+            <TextView
+                android:id="@+id/tv_recDuration"
+                style="@style/textStyleLinearLayout"
+                android:fontFamily="@font/sf_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:text="@string/share_app" />
+
+            <TextView
+                android:id="@+id/tv_recSize"
+                style="@style/textStyleLinearLayout"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/sf_regular"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:text="@string/share_app" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_menuOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_options" />
+
+        <View
+            android:id="@+id/clickPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/iv_menuOption" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

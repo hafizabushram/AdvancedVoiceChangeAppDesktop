@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activity.AudioFilesReadActivity">
+
+        <include
+            android:id="@+id/appBarMain"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="5" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:background="@drawable/search_background"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/appBarMain">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableStart="@drawable/ic_baseline_search"
+                android:drawablePadding="@dimen/_8sdp"
+                android:ems="10"
+
+                android:fontFamily="@font/sf_regular"
+                android:hint="@string/search"
+                android:imeActionLabel="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/accent"
+                android:textSize="@dimen/_14ssp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:fontFamily="@font/sf_regular"
+            android:text="@string/no_record_found"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bannerContainer"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+        <FrameLayout
+            android:id="@+id/bannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="@dimen/_45sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/ads_placement"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/_12sdp" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

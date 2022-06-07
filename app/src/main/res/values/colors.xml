@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9571F6</color>
+    <color name="colorPrimaryDark">#9571F6</color>
+    <color name="colorAccent">#9571F6</color>
+    <color name="colorPurple">#9571F6</color>
+    <color name="colorBg">#BAEAE7E5</color>
+    <color name="colorBgSound">#E8F1F3</color>
+    <color name="txt_color">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorTime">#706E6E</color>
+    <color name="textColor">#2C2C2C</color>
+    <color name="colorBlack">#000000</color>
+
+
+    <color name="black">#000000</color>
+
+    <color name="red">#F81010</color>
+
+    <!-- 87% -->
+
+
+    <!--reds-->
+
+
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="accent">#272727</color>
+    <color name="textField">#9E272727</color>
+    <color name="colorAdsbg">#339E9E9E</color>
+</resources>
